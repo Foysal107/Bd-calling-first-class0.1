@@ -53,3 +53,9 @@
     margin: 8px 0;
     font-size: 0.9rem;
   }
+  .main-content {
+    flex-grow: 1;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    background: #fff;
+  }
