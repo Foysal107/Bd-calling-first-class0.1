@@ -1,61 +1,164 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
   body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #f0f2f5;
-    color: #333;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f0f2f5;
+      color: #333;
   }
+
   .container {
-    max-width: 900px;
-    margin: 40px auto;
-    display: flex;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    background: #fff;
+      max-width: 900px;
+      margin: 40px auto;
+      display: flex;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
   }
+
   .sidebar {
-    width: 280px;
-    background: #2c3e50;
-    color: #ecf0f1;
-    padding: 40px 30px;
-    box-sizing: border-box;
+      width: 280px;
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 40px 30px;
+      box-sizing: border-box;
   }
+
   .profile-pic {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 4px solid #e67e22;
-    object-fit: cover;
-    margin: 0 auto 25px;
-    display: block;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #e67e22;
+      object-fit: cover;
+      margin: 0 auto 25px;
+      display: block;
   }
 
   .name {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 8px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 8px;
   }
+
   .title {
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 300;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    color: #f39c12;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 300;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      color: #f39c12;
   }
+
   .sidebar-section {
-    margin-bottom: 30px;
+      margin-bottom: 30px;
   }
+
   .contact-info p {
-    margin: 8px 0;
-    font-size: 0.9rem;
+      margin: 8px 0;
+      font-size: 0.9rem;
   }
+
   .main-content {
-    flex-grow: 1;
-    padding: 40px 50px;
-    box-sizing: border-box;
-    background: #fff;
+      flex-grow: 1;
+      padding: 40px 50px;
+      box-sizing: border-box;
+      background: #fff;
+  }
+
+
+  .sidebar-section h3 {
+      border-bottom: 2px solid #e67e22;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #f39c12;
+  }
+
+  .skills ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  .skills li {
+      background: #e67e22;
+      padding: 7px 12px;
+      border-radius: 15px;
+      display: inline-block;
+      margin: 6px 6px 6px 0;
+      font-size: 0.9rem;
+      cursor: default;
+  }
+
+
+
+  .section {
+      margin-bottom: 40px;
+  }
+
+  .section h2 {
+      color: #e67e22;
+      font-weight: 600;
+      font-size: 1.8rem;
+      border-bottom: 3px solid #f39c12;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+  }
+
+  .job,
+  .education-item {
+      margin-bottom: 25px;
+  }
+
+  .job-title,
+  .degree {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #2c3e50;
+      margin-bottom: 4px;
+  }
+
+  .company,
+  .school {
+      font-style: italic;
+      color: #7f8c8d;
+      margin-bottom: 6px;
+  }
+
+  .date {
+      color: #95a5a6;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+  }
+
+  ul.responsibilities {
+      margin: 0;
+      padding-left: 20px;
+      color: #444;
+  }
+
+  ul.responsibilities li {
+      margin-bottom: 8px;
+  }
+
+  @media (max-width: 768px) {
+      .container {
+          flex-direction: column;
+          max-width: 100%;
+          margin: 20px;
+      }
+
+      .sidebar {
+          width: 100%;
+          text-align: center;
+          padding: 25px 15px;
+      }
+
+      .main-content {
+          padding: 25px 15px;
+      }
   }
